@@ -1,0 +1,8 @@
+version: '3'
+services:
+  kafka:
+    image: "venkatpod/kafka:v0.2"
+    ports:
+      - "9092:9092"
+    environment:
+      - AUTO_CREATE_TOPICS=test-venkat:2,second-topic:2
